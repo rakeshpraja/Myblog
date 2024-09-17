@@ -9,7 +9,7 @@ use App\Http\Controllers\API\AuthController;
 Route::post('/login', [AuthController::class, 'login']);
 
 
-Route::middleware('auth:sanctum')->group(function () {
+Route::middleware('auth:api')->group(function () {
     
     Route::get('/get_all_post', [PostController::class, 'getAllPost']);
     Route::get('/single_post/{id}', [PostController::class, 'singlePost']);
