@@ -1,0 +1,139 @@
+===================================================
+Blog Api In laravel latest version 11
+===================================================
+
+
++++++++++++++++++++++++
+Get All Post Api
+++++++++++++++++++++++++++++++
+			url : http://127.0.0.1:8000/api/get_all_post
+			method : GET
+			
+
+++++++++++++++++++++++++++++++++++++++++++
+Login Api
+++++++++++++++++++++++++++++++++++++++++++++
+			url : http://127.0.0.1:8000/api/login
+			method : POST
+			column input : 
+						{
+							"key": "email",
+							"value": "rp2515310@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						}
+
++++++++++++++++++++++++
+Single Post Api
+++++++++++++++++++++++++++++++
+			url :http://127.0.0.1:8000/api/single_post/1
+			method : GET
+									
+			"auth": {
+					"type": "bearer-token",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4|KgfS0i10S9WcSA0HnXgi5hytagcNaxLcxwYdbWpufe39be4b",
+							"type": "string"
+						}
+					]
+				}
+				
+
++++++++++++++++++++++++
+logout Api
+++++++++++++++++++++++++++++++
+			url :http://127.0.0.1:8000/api/logout
+			method : POST
+									
+			"auth": {
+					"type": "bearer-token",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4|KgfS0i10S9WcSA0HnXgi5hytagcNaxLcxwYdbWpufe39be4b",
+							"type": "string"
+						}
+					]
+				}
+				
+
++++++++++++++++++++++++
+Create Post Api
+++++++++++++++++++++++++++++++
+			url :http://127.0.0.1:8000/api/create_post
+			method : POST
+			column input : 
+						{
+							"key": "title",
+							"value": "hghghghjgjhk",
+							"type": "text"
+						}
+						{
+							"key": "content",
+							"value": "hgghggkjh hhjkjhjkhk",
+							"type": "text"
+						}
+						"auth": {
+							"type": "bearer-token",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|KgfS0i10S9WcSA0HnXgi5hytagcNaxLcxwYdbWpufe39be4b",
+									"type": "string"
+								}
+							]
+						}
+											
++++++++++++++++++++++++
+Delete Post Api
+++++++++++++++++++++++++++++++
+			url :http://127.0.0.1:8000/api/delete_post/1
+			method : DELETE
+						
+				"auth": {
+							"type": "bearer-token",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|KgfS0i10S9WcSA0HnXgi5hytagcNaxLcxwYdbWpufe39be4b",
+									"type": "string"
+								}
+							]
+						}
+
++++++++++++++++++++++++
+Update Post Api
+++++++++++++++++++++++++++++++
+			url :http://127.0.0.1:8000/api/posts
+			method : DELETE
+						{
+							"key": "post_id",
+							"value": "2",
+							"type": "int"
+						}
+						{
+							"key": "title",
+							"value": "hghghghjgjhk",
+							"type": "text"
+						}
+						{
+							"key": "content",
+							"value": "hgghggkjh hhjkjhjkhk",
+							"type": "text"
+						}	
+						"auth": {
+									"type": "bearer-token",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "4|KgfS0i10S9WcSA0HnXgi5hytagcNaxLcxwYdbWpufe39be4b",
+											"type": "string"
+										}
+									]
+								}									
